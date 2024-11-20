@@ -1,0 +1,433 @@
+body.Index {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/home-hero.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;     /* La imagen cubre todo el fondo */
+    background-position:top; 
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-size: cover;
+    height: 100vh;               /* Ocupa la altura de la ventana */
+    width: 100vw;                /* Ocupa el ancho de la ventana */
+}
+
+header.Inicio nav ul { 
+    list-style: none; /* Evitamos las viñetas */
+    padding: 3rem;  /* ampliamos el espaciado */
+    margin: 0; 
+    display: flex; 
+    justify-content: center; /* centramos la lista*/
+} 
+
+header.Inicio nav ul li { 
+    margin: 0 1rem;  /* Aplicamos margen lateral entre los elementos */
+
+} 
+
+header.Inicio nav ul li a { 
+    color: #fff; 
+    text-decoration: none; /* Ninguna barra inferior */
+    font-size: 1.3rem; 
+    font-family: 'Work Sans', sans-serif; 
+} 
+
+header.Inicio nav ul li a:hover { color: #6BDEC8; }
+
+.hero {
+    text-align: center;
+    padding-top: 9rem ;
+    padding-bottom: 13rem;
+}
+
+.hero img {
+    width: 80px;
+    height: auto;
+}
+
+.hero h2{
+    color:#fff;
+    font-family: 'Work Sans', sans-serif; 
+    margin: 0;
+    letter-spacing: -10px;
+    font-size: 900%;
+}
+
+.hero p{
+    color:#fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 220%;
+    letter-spacing: 7px;
+    margin: 0;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p{
+    font-size:small;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #6BDEC8;
+}
+
+/*header para las paginas que no son inicio*/
+
+header.Pagina{
+    background-color: #000;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center; /* Centra verticalmente la imagen y el título */
+}
+
+.logo {
+    width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin: 0rem; /* Espacio entre la imagen y el título */
+    padding-top: 2rem;
+
+}
+
+/* Estilos para el título */
+.titulo {
+    font-size: 50px; /* Tamaño del texto */
+    color: #ffffff;
+    margin-top: 1rem;
+    font-family: 'Work sans', sans-serif;
+    letter-spacing: -2px;
+}
+
+header nav ul { 
+    list-style: none;  
+    padding-bottom: 3rem;
+    margin-top: -1.5rem; 
+    display: flex; 
+    justify-content: center; 
+} 
+
+header nav ul li { 
+    margin: 0 1rem; 
+
+} 
+
+header nav ul li a { 
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 1.1rem; 
+    font-family: 'Work Sans', sans-serif; 
+} 
+
+header nav ul li a:hover { color: #6BDEC8; }
+
+.puntero{
+    border-bottom: 2px solid;
+    border-bottom-color: #fff;
+    padding-bottom: 9px;
+}
+
+/*Cuerpo de la pagina*/
+main.Pagina{
+    padding-inline: 27rem;
+    font-family: 'Work Sans', sans-serif; 
+    background-color: white;
+    line-height: 1.4rem;
+}
+
+#explicacion {
+    padding: 20px;
+}
+
+/* Clase explicacion */
+#explicacion h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#explicacion p {
+    /* font-size: 16px;*/
+    margin-bottom: 20px;
+}
+
+/* Contenedor del video */
+.video-container { /*aspecto del contenedor div para el video y parrafo*/
+    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+    max-width: 800px; /* Máximo ancho del video */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    display: flex;
+    flex-direction: column; /* Asegura que el texto esté debajo del video */
+    align-items: center; /* Centra el contenido horizontalmente */
+  }
+  
+.video-container iframe {/*dimensiones del video*/
+    width: 450px;
+    height: 250px;
+  }
+
+.Descripcion{
+    margin-top: 0px; /* Espacio entre el video y el texto */
+    color: rgb(65, 65, 65);
+    font-size: 11px;
+    padding-right: 10rem;
+}
+
+section{
+    margin-bottom: 1.5rem;
+}
+
+.titular {
+    font-size: 20px;
+    margin-bottom: 10px; /* Espacio entre el texto y el borde */
+    padding-bottom: 10px; /* Espacio interno debajo del texto */
+    position: relative; /* Asegura que el borde esté por debajo */
+}
+
+/* Contenedor del borde extendido */
+.titular::after {
+    content: ""; /* Crea un pseudo-elemento */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Abarca todo el ancho de la ventana del navegador */
+    height: 2px; /* Grosor del borde */
+    background-color: #333; /* Color del borde */
+}
+
+#Utensilios li{
+    font-size: 15px; /* Tamaño de la fuente */
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+    margin-left: 0;
+    list-style: square;
+}
+
+dl{
+    margin: 1rem;
+}
+
+dt{
+    font-size: large;
+    font-weight:700;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+footer.Pagina {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align:left;
+}
+
+footer.Pagina p {
+    padding-left: 27rem;
+}
+footer.Pagina ul {
+    padding-left: 26.5rem;
+    padding-bottom: 1rem;
+    margin:0;
+}
+
+/*Tercera pagina*/
+
+main.cursos{
+    padding-inline: 27rem;
+    font-family: 'Work Sans', sans-serif; 
+    background-color: white;
+    line-height: 1.4rem;
+    text-align: center;
+
+}
+
+main.cursos h1{
+    font-size: 1.6rem;
+}
+
+time{
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.foto-container { 
+    margin: 2rem auto; /* Centra el contenedor horizontalmente */
+    display: flex;
+    flex-direction: column; /* Asegura que el texto esté debajo del video */
+    align-items: center; /* Centra el contenido horizontalmente */
+  }
+  
+.foto-container img {/*dimensiones del video*/
+    width: 700px;
+    height: auto;
+  }
+
+figcaption{
+    margin-top: 0px; /* Espacio entre el video y el texto */
+    color: rgb(65, 65, 65);
+    font-size: 12px;
+    padding-right: 30rem;
+}
+
+figcaption a{
+    color: #942c0b;
+    border-bottom: 2px dotted #942c0b;
+    text-decoration: none;
+}
+
+figcaption a:hover{
+    border-bottom: 2px solid;
+}
+
+p.cursos{
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-align: left;
+    padding-inline: 10rem;
+    line-height: 2.5rem;
+}
+
+/* General Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+caption {
+font-size: 1.4em;
+text-align: center;
+padding: 10px 0;
+border-top: #000 solid 2px;
+}
+
+th {
+text-align: left;
+padding: 10px;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+font-weight: lighter;
+}
+
+td {
+padding: 10px;
+text-align: left;
+}
+
+tfoot td {
+padding-left: 10px;
+font-size: 0.7rem;
+border-bottom: 2px solid black;
+}
+  
+tbody tr.Otro:nth-child(1),
+tbody tr.Otro:nth-child(3),
+tbody tr.Otro:nth-child(5) {
+  background-color: #6BDEC8; /* Color de fondo */
+}
+
+div.formulario {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+}
+
+form {
+    background-color: #fff;
+    padding: 10px;
+    width: 800px;
+}
+
+fieldset{
+    margin-top:1rem;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+table.Cuestionario {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Formu {
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+label {
+    margin-bottom: 30px;
+    font-size: large;
+}
+
+label a{
+    color: #942c0b;
+    border-bottom: 2px dotted #942c0b;
+    text-decoration: none;
+}
+
+label a:hover{
+    border-bottom: 2px solid;
+}
+
+
+input, select {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-inline: -22rem;
+}
+
+input[type="date"] {
+    font-size: large;
+    padding: 0 6px;
+}
+
+
+textarea{
+    margin:20px 0;
+}
+
+.submit-button {
+    width: 12rem;
+    height: 4rem;
+    padding: 12px;
+    font-size: 20px;
+    background-color: #942c0b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
